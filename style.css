@@ -1,0 +1,170 @@
+body {
+  margin: 0 auto;
+  width: 55%;
+  background: linear-gradient(135deg, #f0f0f0 0%, #e0e7ff 100%);
+  font-family: "Segoe UI", "Arial", sans-serif;
+  color: #22223b;
+}
+
+.main {
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.12);
+  padding: 40px 24px 32px 24px;
+  margin-top: 32px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  color: #4f518c;
+}
+
+.note {
+  font-size: 0.95rem;
+  color: #a0aec0;
+}
+
+.signs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 32px auto 24px auto;
+  gap: 18px;
+}
+
+.btn-signs {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #e0e7ff;
+  border-radius: 50%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f7f7ff;
+  box-shadow: 0 2px 8px rgba(79, 81, 140, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+  outline: none;
+  position: relative;
+}
+
+.btn-signs:hover,
+.btn-signs:focus {
+  transform: scale(1.15);
+  box-shadow: 0 4px 16px rgba(79, 81, 140, 0.18);
+  border-color: #4f518c;
+  z-index: 2;
+}
+
+.btn-signs::after {
+  content: attr(title);
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.95rem;
+  color: #4f518c;
+  background: #fff;
+  padding: 2px 8px;
+  border-radius: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(79, 81, 140, 0.08);
+}
+
+.btn-signs:hover::after,
+.btn-signs:focus::after {
+  opacity: 1;
+}
+
+.result {
+  display: none;
+  margin: 0 auto;
+  margin-top: 32px;
+  max-width: 500px;
+  background: #f7f7ff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(79, 81, 140, 0.1);
+  padding: 32px 24px;
+  text-align: center;
+  animation: fadeIn 0.6s;
+}
+
+.result h2 {
+  margin-top: 0;
+  color: #4f518c;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.result span {
+  display: block;
+  color: #a0aec0;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.result p {
+  font-size: 1.15rem;
+  color: #22223b;
+  margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.btn-signs[value="aries"] {
+  background-image: url("./media/stickers/aries.png");
+}
+.btn-signs[value="aquarius"] {
+  background-image: url("./media/stickers/aquarius.png");
+}
+.btn-signs[value="cancer"] {
+  background-image: url("./media/stickers/cancer.png");
+}
+.btn-signs[value="capricorn"] {
+  background-image: url("./media/stickers/capricorn.png");
+}
+.btn-signs[value="gemini"] {
+  background-image: url("./media/stickers/gemini.png");
+}
+.btn-signs[value="leo"] {
+  background-image: url("./media/stickers/leo.png");
+}
+.btn-signs[value="libra"] {
+  background-image: url("./media/stickers/libra.png");
+}
+.btn-signs[value="pisces"] {
+  background-image: url("./media/stickers/pisces.png");
+}
+.btn-signs[value="sagittarius"] {
+  background-image: url("./media/stickers/sagittarius.png");
+}
+.btn-signs[value="scorpio"] {
+  background-image: url("./media/stickers/scorpio.png");
+}
+.btn-signs[value="taurus"] {
+  background-image: url("./media/stickers/taurus.png");
+}
+.btn-signs[value="virgo"] {
+  background-image: url("./media/stickers/virgo.png");
+}
