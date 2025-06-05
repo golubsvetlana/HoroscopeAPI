@@ -5,6 +5,18 @@ body {
   font-family: "Segoe UI", "Arial", sans-serif;
   color: #22223b;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #fff;
+    width: 100%;
+    padding: 0 16px;
+  }
+  .main {
+    padding: 24px 16px;
+    margin-top: 16px;
+    border-radius: none;
+  }
+}
 
 .main {
   min-height: 100vh;
