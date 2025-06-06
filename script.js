@@ -10,7 +10,7 @@ for (let i = 0; i < btns.length; i++) {
         // console.log(selectedValue);
         try {
             const response = await fetch(`https://api.api-ninjas.com/v1/horoscope?zodiac=${selectedValue}`, {
-                headers: { 'X-Api-Key': 'A4CmyARivFLrKwIkWERXGQ==2dgU7cSZgsaEhBKl' },
+                headers: { 'X-Api-Key': 'MY_API_KEY' },
                 method: "GET",
                 contentType: 'application/json'
             });
